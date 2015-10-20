@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) throws ExecutionException, InterruptedException, IOException {
         DatomicSandbox datomicSandbox = new DatomicSandbox();
         String uri = "datomic:dev://46.101.169.9:80/seattle";
-        init(uri);
+//        init(uri);
         Connection con = Peer.connect(uri);
         datomicSandbox.insert(con);
         Database db = con.db();
